@@ -18,9 +18,14 @@ Here's some ideas of how you could continue to grow and build upon what you've d
 - Add a form to allow a user to apply to adopt a dog if the dog is available.
 - Add a form to allow users to register a dog they found.
 
+## Check out these resources to dive in and learn more
+Check out the resources in [**GitHub-Copilot-Resources.md**][GitHub-Copilot-Resources]. 
+
+This resource list has been carefully curated to help you to learn more about GitHub Copilot, how to use it effectively, what is coming in the future and more. There are even YouTube playlists that include the latest videos from the GitHub Developer Relations team and others from GitHub. 
 
 | [← Add the filter feature][walkthrough-previous] | [Next: Pets workshop selection →][walkthrough-next] |
 |:-----------------------------------|------------------------------------------:|
 
 [walkthrough-previous]: ./4-add-feature.md
 [walkthrough-next]: ../README.md
+[GitHub-Copilot-Resources]: ../GitHub-Copilot-Resources.md
