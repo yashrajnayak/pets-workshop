@@ -25,14 +25,13 @@ Adding the filters to the page will require updating a minimum of two files - th
 1. Return to your IDE with your project open.
 2. Close any tabs you have open inside your IDE.
 3. Enable Auto Save by selecting **File** > **Auto Save**.
-4. Open the following files in your IDE (which we'll point Copilot chat to for context):
-   - **server/app.py**
-   - **client/src/components/DogList.svelte** 
-5. Select **Copilot Edits** in the Copilot Chat window.
-6. If available, select **Claude 3.5 Sonnet** from the list of available models.
+4. Open GitHub Copilot Chat.
+5. Switch to edit mode by selecting **Edit** in the chat mode dropdown at the bottom of Chat view (should be currently **Ask**)
+6. If available, select **Claude 3.5 Sonnet** from the list of available models
 7. Select **Add Context...** in the chat window.
-7. Select **Open Editors** from the prompt. This will add all currently open files to the context.
-8. Ask Copilot to generate the update you want to the page, which is to add filters for both dog breed and if dogs are available for adoption. Use your own phrasing, ensuring the following requirements are met:
+8. Select **server/app.py** and **client/src/components/DogList.svelte** files (you need select **Add context** for each file) 
+  - **Hint**: if you type the file names, they will show up in the filter. You can also drag the files or right click file in explorer and select `Copilot -> Add File to Chat`)
+9. Ask Copilot to generate the update you want to the page, which is to add filters for both dog breed and if dogs are available for adoption. Use your own phrasing, ensuring the following requirements are met:
     - A dropdown list should be provided with all breeds
     - A checkbox should be available to only show available dogs
     - The page should automatically refresh whenever a change is made
