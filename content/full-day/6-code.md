@@ -80,7 +80,7 @@ Adding the filters to the page will require updating a minimum of three files - 
    - **client/src/components/DogList.svelte** 
 2. Open GitHub Copilot Chat.
 3. Switch to edit mode by selecting **Edit** in the chat mode dropdown at the bottom of Chat view (should be currently **Ask**)
-4. Ensure **Claude 3.7 Sonnet** is selected for the model.
+4. If available, select **Claude 3.7 Sonnet** for the model.
 5. Select **Add Context...** in the chat window.
 6. Select **server/app.py**, **client/src/components/DogList.svelte** and **server/test_app.py** files (you need to select **Add context** for each file) 
   - **Hint**: if you type the file names, they will show up in the filter. You can also drag the files or right click file in explorer and select `Copilot -> Add File to Chat`)
