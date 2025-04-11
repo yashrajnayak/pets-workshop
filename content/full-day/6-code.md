@@ -78,18 +78,22 @@ Adding the filters to the page will require updating a minimum of three files - 
    - **server/app.py**
    - **server/test_app.py**
    - **client/src/components/DogList.svelte** 
-2. Select **Copilot Edits** in the Copilot Chat window.
-3. Ensure **Claude 3.7 Sonnet** is selected for the model.
-4. Select **Add Context...** in the chat window and **Open Editors** from the prompt. This will add all currently open files to the context.
-5. Ask Copilot to perform the operation you want, to update the page to add the filters. It should meet the following requirements:
+2. Open GitHub Copilot Chat.
+3. Switch to edit mode by selecting **Edit** in the chat mode dropdown at the bottom of Chat view (should be currently **Ask**)
+4. If available, select **Claude 3.7 Sonnet** for the model.
+5. Select **Add Context...** in the chat window.
+6. Select **server/app.py**, **client/src/components/DogList.svelte** and **server/test_app.py** files (you need to select **Add context** for each file)
+> [!TIP]
+> If you type the file names after clicking **Add context**, they will show up in the filter. You can also drag the files or right click file in explorer and select `Copilot -> Add File to Chat`)
+7. Ask Copilot to perform the operation you want, to update the page to add the filters. It should meet the following requirements:
     - A dropdown list should be provided with all breeds
     - A checkbox should be available to only show available dogs
     - The page should automatically refresh whenever a change is made
     - Tests should be updated for any changes to the endpoint.
-6. Review the code suggestions to ensure they behave the way you expect them to, making any necessary changes. Once you're satisfied, you can select **Keep** on the files individually or in Copilot Chat to accept all changes.
-7. Open the page at [http://localhost:4321][localhost] to see the updates!
-8. Run the Python tests by using `python -m unittest` in the terminal as you did previously.
-9. If any changes are needed, explain the required updates to GitHub Copilot and allow it to generate the new code.
+8. Review the code suggestions to ensure they behave the way you expect them to, making any necessary changes. Once you're satisfied, you can select **Keep** on the files individually or in Copilot Chat to accept all changes.
+9. Open the page at [http://localhost:4321][localhost] to see the updates!
+10. Run the Python tests by using `python -m unittest` in the terminal as you did previously.
+11. If any changes are needed, explain the required updates to GitHub Copilot and allow it to generate the new code.
 
 > [!IMPORTANT]
 > Working iteratively a normal aspect of coding with an AI pair programmer. You can always provide more context to ensure Copilot understands, make additional requests, or rephrase your original prompts.
