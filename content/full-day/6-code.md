@@ -82,9 +82,9 @@ Adding the filters to the page will require updating a minimum of three files - 
 3. Switch to edit mode by selecting **Edit** in the chat mode dropdown at the bottom of Chat view (should be currently **Ask**)
 4. If available, select **Claude 3.7 Sonnet** for the model.
 5. Select **Add Context...** in the chat window.
-6. Select **server/app.py**, **client/src/components/DogList.svelte** and **server/test_app.py** files (you need to select **Add context** for each file) 
-  - **Hint**: if you type the file names, they will show up in the filter. You can also drag the files or right click file in explorer and select `Copilot -> Add File to Chat`)
-
+6. Select **server/app.py**, **client/src/components/DogList.svelte** and **server/test_app.py** files (you need to select **Add context** for each file)
+> [!TIP]
+> If you type the file names after clicking **Add context**, they will show up in the filter. You can also drag the files or right click file in explorer and select `Copilot -> Add File to Chat`)
 7. Ask Copilot to perform the operation you want, to update the page to add the filters. It should meet the following requirements:
     - A dropdown list should be provided with all breeds
     - A checkbox should be available to only show available dogs

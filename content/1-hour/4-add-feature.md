@@ -30,7 +30,8 @@ Adding the filters to the page will require updating a minimum of two files - th
 6. If available, select **Claude 3.5 Sonnet** from the list of available models
 7. Select **Add Context...** in the chat window.
 8. Select **server/app.py** and **client/src/components/DogList.svelte** files (you need to select **Add context** for each file) 
-  - **Hint**: if you type the file names, they will show up in the filter. You can also drag the files or right click file in explorer and select `Copilot -> Add File to Chat`)
+> [!TIP]
+> If you type the file names after clicking **Add context**, they will show up in the filter. You can also drag the files or right click file in explorer and select `Copilot -> Add File to Chat`)
 9. Ask Copilot to generate the update you want to the page, which is to add filters for both dog breed and if dogs are available for adoption. Use your own phrasing, ensuring the following requirements are met:
     - A dropdown list should be provided with all breeds
     - A checkbox should be available to only show available dogs
