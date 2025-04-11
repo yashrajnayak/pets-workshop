@@ -68,7 +68,9 @@ Let's build our new route in our Flask backend with the help of code completion.
 > [!IMPORTANT]
 > Because LLMs are probabilistic, not deterministic, the exact code generated can vary. The above is a representative example. If your code is different, that's just fine as long as it works!
 
-8. **Save** the file.
+8. Add a comment to the newly created function. To do this, place your cursor inside the function (anywhere between the lines `def get_breeds...` and `return jsonify...`). Then, press <kbd>cmd/control</kbd>+<kbd>I</kbd> or right-click and select `Copilot -> Editor Inline Chat` to open the editor inline chat. In the input box, type `/doc` (you can optionally provide additional details, but it's not required). This will prompt GitHub Copilot to generate a documentation comment for the function. The suggested comment will appear inline in the code (highlighted in green). Click `Accept` to apply the comment to your code, or click `Close` to discard the suggestion. You just used a slash command, a shortcut to streamline a task, these commands eliminate the need for verbose prompts.
+
+9. **Save** the file.
 
 ## Validate the endpoint
 
@@ -85,6 +87,7 @@ You've added a new endpoint with the help of GitHub Copilot! You saw how Copilot
 - [Code suggestions in your IDE with GitHub Copilot][copilot-suggestions]
 - [Code completions with GitHub Copilot in VS Code][vscode-copilot]
 - [Prompt crafting][prompt-crafting]
+- [Inline chat][inline-chat]
 
 
 | [← Workshop setup][walkthrough-previous] | [Next: Helping GitHub Copilot understand context →][walkthrough-next] |
@@ -96,6 +99,7 @@ You've added a new endpoint with the help of GitHub Copilot! You saw how Copilot
 [flask-routing]: https://flask.palletsprojects.com/en/stable/quickstart/#routing
 [http-methods]: https://www.w3schools.com/tags/ref_httpmethods.asp
 [prompt-crafting]: https://code.visualstudio.com/docs/copilot/prompt-crafting
+[inline-chat]: https://code.visualstudio.com/docs/copilot/chat/inline-chat
 [server-code]: /server/
 [vscode-copilot]: https://code.visualstudio.com/docs/copilot/ai-powered-suggestions
 [walkthrough-previous]: ./0-setup.md
