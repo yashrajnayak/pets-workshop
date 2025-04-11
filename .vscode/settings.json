@@ -8,5 +8,6 @@
         "devcontainer",
         "devcontainers",
         "prebuild"
-    ]
+    ],
+    "github.copilot.nextEditSuggestions.enabled": true,    
 }
