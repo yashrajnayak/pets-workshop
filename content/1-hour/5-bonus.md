@@ -7,6 +7,9 @@
 
 With chat agent mode in Visual Studio Code, you can use natural language to define a high-level task and to start an agentic code editing session to accomplish that task. In agent mode, Copilot **autonomously** plans the work needed and determines the relevant files and context. It then makes edits to your codebase and invokes tools to accomplish the request you made. Agent mode monitors the outcome of edits and tools and iterates to resolve any issues that arise.
 
+> [!IMPORTANT]
+> While Copilot autonomously determines the operations necessary to complete the requested task, as the developer you are always in charge. You will work with Copilot to ensure everything is completely correctly, reading and reviewing the code. You will also want to continue to follow proper DevOps practices, including code reviews, testing, security scans, etc.
+
 Why would you use agent mode instead of edit mode?
 
 - **Edit scope**: agent mode autonomously determines the relevant context and files to edit. In edit mode, you need to specify the context yourself.
