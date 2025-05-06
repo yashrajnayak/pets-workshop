@@ -34,7 +34,7 @@ In this section, you will use Copilot's agent mode to add themes to the Tailspin
 6. Navigate to [](../prompts/fun-add-themes.md)
 7. Copy the content of the prompt
 8. Paste the content in the copilot prompt input
-9. The agent mode will take its theme, since it searches by itself the relevant files to modify, and then do multiple passes including talking with itself to refine the task at hand
+9. The agent mode will take its time, since it searches by itself the relevant files to modify, and then do multiple passes including talking with itself to refine the task at hand
 10. While Agent is doing it's thing, take the opportunity to examine the content of prompt that was used.
 11. When the agent is done (you no longer see any spinners and the thumb up/down icons will be visible), open a browser to see the results
     - Open the page at [http://localhost:4321][tailspin-shelter-website] to see the updates!
