@@ -31,11 +31,11 @@ In this section, you will use Copilot's agent mode to add themes to the Tailspin
 3. Select the `+` icon towards the top of Copilot chat to begin a new chat.
 4. Select agent mode, by selecting `Agent` (just like you did `Edit` before) in the model selector dropdown at the bottom of the chat window.
 5. Select one of models (some may not be available) `Claude 3.7 Sonnet`, `Claude 3.5 Sonnet` or `GPT-4.1 (Preview)`
-6. Click `Add Context...`
-7. Select `Prompts` from the list (or type it for faster selection)
-8. From the list of available prompts select `fun-add-themes`
+6. Navigate to [](../prompts/fun-add-themes.md)
+7. Copy the content of the prompt
+8. Paste the content in the copilot prompt input
 9. The agent mode will take its theme, since it searches by itself the relevant files to modify, and then do multiple passes including talking with itself to refine the task at hand
-10. While Agent is doing it's thing, expand the `Used 1 reference` (first line after copilot response in the chat window) and notice it mentions the prompt you selected, click on the name of the prompt and examine the content of prompt that was used.
+10. While Agent is doing it's thing, take the opportunity to examine the content of prompt that was used.
 11. When the agent is done (you no longer see any spinners and the thumb up/down icons will be visible), open a browser to see the results
     - Open the page at [http://localhost:4321][tailspin-shelter-website] to see the updates!
     - Examine the changes made to the files if you like
@@ -59,11 +59,11 @@ You'll also notice there aren't step-by-step instructions here. You've already s
 
 ### Some prompts to play with
 
-We have provided you some prompts in [.github/prompts][github-prompts-path] folder, which you can use directly as direct source on the context or as inspiration for your explorations.
+We have provided you some prompts in [prompts][github-prompts-path] folder, which you can use directly as inspiration for your explorations.
 
 > [!TIP]
-> To use a prompt, select `Add Context..` in the chat and then select `Prompt`
-> Learn more about [prompts in Visual Studio Code][vscode-prompts]
+> These prompts are meant to be used as one shot, but if have prompts that can be are generic, reusable prompt are a great way to share prompts with the team members. They can be placed in a well know folder and be invoked directly in the Copilot Chat by referencing them.
+> Learn more about [reusable prompts in Visual Studio Code][vscode-prompts]
 
 ### Potential next steps
 
@@ -80,5 +80,5 @@ Here's some ideas of how you could continue to grow and build upon what you've d
 [walkthrough-previous]: ./4-add-feature.md
 [walkthrough-next]: ../README.md
 [tailspin-shelter-website]: http://localhost:4321
-[github-prompts-path]: ../../.github/prompts/
+[github-prompts-path]: ../prompts/
 [vscode-prompts]: https://aka.ms/vscode-ghcp-prompt-snippets
