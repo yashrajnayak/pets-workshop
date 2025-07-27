@@ -1,4 +1,4 @@
 flask
-sqlalchemy
-flask_sqlalchemy
+pymongo
 flask-cors
+python-dotenv
