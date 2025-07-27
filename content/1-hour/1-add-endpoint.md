@@ -10,7 +10,7 @@ With code completions, GitHub Copilot provides suggestions in your code editor w
 
 It's standard to work in phases when adding functionality to an application. Given that we know we want to allow users to filter the list of dogs based on breed, we'll need to add an endpoint to provide a list of all breeds. Later we'll add the rest of the functionality, but let's focus on this part for now.
 
-The application uses a Flask app with SQLAlchemy as the backend API (in the [/server][server-code] folder), and an Astro app with Svelte as the frontend (in the [/client][client-code] folder). You will explore more of the project later; this exercise will focus solely on the Flask application.
+The application uses a Flask app with MongoDB as the backend API (in the [/server][server-code] folder), and an Astro app with Svelte as the frontend (in the [/client][client-code] folder). You will explore more of the project later; this exercise will focus solely on the Flask application.
 
 > [!NOTE]
 > As you begin making changes to the application, there is always a chance a breaking change could be created. If the page stops working, check the terminal window you used previously to start the application for any error messages. You can stop the app by using <kbd>Ctl</kbd>+<kbd>C</kbd>, and restart it by running `./scripts/start-app.sh`.
@@ -50,19 +50,23 @@ Let's build our new route in our Flask backend with the help of code completion.
     ```python
     @app.route('/api/breeds', methods=['GET'])
     def get_breeds():
-        # Query all breeds
-        breeds_query = db.session.query(Breed.id, Breed.name).all()
+        """Get all breeds"""
+        try:
+            breeds = Breed.find_all()
+            
+            breeds_list = []
+            for breed in breeds:
+                breeds_list.append({
+                    'id': breed.id,
+                    'name': breed.name,
+                    'description': breed.description
+                })
+            
+            return jsonify(breeds_list)
         
-        # Convert the result to a list of dictionaries
-        breeds_list = [
-            {
-                'id': breed.id,
-                'name': breed.name
-            }
-            for breed in breeds_query
-        ]
-        
-        return jsonify(breeds_list)
+        except Exception as e:
+            logging.error(f"Error retrieving breeds: {e}")
+            return jsonify({"error": "Failed to retrieve breeds"}), 500
     ```
 
 > [!IMPORTANT]

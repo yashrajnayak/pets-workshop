@@ -9,7 +9,7 @@ As with any tool, there are a set of skills which need to be acquired, which is 
 
 ## Prerequisites
 
-The application for the workshop uses is built primarily with Python (Flask and SQLAlchemy) and Astro (using Tailwind and Svelte). While experience with these frameworks and languages is helpful, you'll be using Copilot to help you understand the project and generate the code. As a result, as long as you are familiar with programming you'll be able to complete the exercises!
+The application for the workshop uses is built primarily with Python (Flask and MongoDB) and Astro (using Tailwind and Svelte). While experience with these frameworks and languages is helpful, you'll be using Copilot to help you understand the project and generate the code. As a result, as long as you are familiar with programming you'll be able to complete the exercises!
 
 > [!NOTE]
 > When in doubt, you can always highlight a block of code you're unfamiliar with and ask GitHub Copilot chat for an explanation!

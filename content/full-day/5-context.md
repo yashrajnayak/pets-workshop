@@ -74,7 +74,7 @@ This is an application to allow people to look for dogs to adopt. It is built in
 
 ## Backend
 
-- Built using Flask and SQLAlchemy
+- Built using Flask and MongoDB with PyMongo
 - All routes require unit tests, which are created in *test_file.py* in the same folder as the file
 - When creating tests, always mock database calls
 

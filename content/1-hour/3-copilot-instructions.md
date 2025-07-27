@@ -56,7 +56,7 @@ Let's create a Copilot instructions file. We'll start by asking Copilot to gener
 
     ## Backend
 
-    - Built using Flask and SQLAlchemy
+    - Built using Flask and MongoDB with PyMongo
     - Use type hints
 
     ## Frontend

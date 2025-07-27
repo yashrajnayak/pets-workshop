@@ -15,7 +15,7 @@ This workshop is built to help guide you through some of the most common DevOps 
 
 ## Prerequisites
 
-The application for the workshop uses is built primarily with Python (Flask and SQLAlchemy) and Astro (using Tailwind and Svelte). While experience with these frameworks and languages is helpful, you'll be using Copilot to help you understand the project and generate the code. As a result, as long as you are familiar with programming you'll be able to complete the exercises!
+The application for the workshop uses is built primarily with Python (Flask and MongoDB) and Astro (using Tailwind and Svelte). While experience with these frameworks and languages is helpful, you'll be using Copilot to help you understand the project and generate the code. As a result, as long as you are familiar with programming you'll be able to complete the exercises!
 
 ## Required resources
 
